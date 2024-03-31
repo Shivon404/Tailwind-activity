@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@latest/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+  <h1 style="font-size: 50px; color: black;">Accordion</h1>
+  
+  <br>
+
+  <h1 style="font-size: 30px; color: black;">Example</h1>
+  
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+</body>
+  
+  
+</html>
+
+
+<h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Page Sections</h2>
+      <ul>
+        <button id="hero-sections-btn" class="menu-button" onclick="loadHeroContent()">Hero Sections</button>
+        <button id="feature-sections-btn" class="menu-button" onclick="loadFeatureContent()">Feature Sections</button>
+        <button id="cta-sections-btn" class="menu-button" onclick="loadCtaContent()">CTA Sections</button>
+        <button id="pricing-sections-btn" class="menu-button" onclick="loadPricingSectionsContent()">Pricing Sections</button>
+        <button id="header-sections-btn" class="menu-button" onclick="loadHeaderContent()">Header Sections</button>
+        <button id="newsletter-sections-btn" class="menu-button" onclick="loadNewsletterContent()">Newsletter Sections</button>
+        <button id="stats-btn" class="menu-button" onclick="loadStatsContent()">Stats</button><br>
+        <button id="testimonials-btn" class="menu-button" onclick="loadTestimonialsContent()">Testimonials</button><br>
+        <button id="blog-sections-btn" class="menu-button" onclick="loadBlogContent()">Blog Sections</button>
+        <button id="contact-sections-btn" class="menu-button" onclick="loadContactContent()">Contact Sections</button>
+        <button id="team-sections-btn" class="menu-button" onclick="loadTeamContent()">Team Sections</button>
+        <button id="content-sections-btn" class="menu-button" onclick="loadContentContent()">Content Sections</button>
+        <button id="logo-clouds-btn" class="menu-button" onclick="loadLogoContent()">Logo Clouds</button>
+        <button id="faqs-btn" class="menu-button" onclick="loadFaqsContent()">FAQs</button><br>
+        <button id="footers-btn" class="menu-button" onclick="loadFootersContent()">Footers</button>
+           
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Elements</h2>
+      <ul>
+        <button id="headers-btn" class="menu-button" onclick="loadHeadersContent()">Headers</button>
+        <button id="flyout-btn" class="menu-button" onclick="loadFlyoutContent()">Flyout Menus</button>
+        <button id="banners-btn" class="menu-button" onclick="loadBannersContent()">Banners</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Feedback</h2>
+      <ul>
+        <button id="404-btn" class="menu-button" onclick="load404Content()">404 Pages</button>
+      </ul>
+
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Page Examples</h2>
+      <ul>
+  <button id="landing-btn" class="menu-button" onclick="loadLandingContent()">Landing Pages</button>
+  <button id="pricing-btn" class="menu-button" onclick="loadPricingContent()">Pricing Pages</button>
+  <button id="about-btn" class="menu-button" onclick="loadAboutContent()">About Pages</button>
+</ul>
+
+<h2 style="color: rgb(0, 0, 0); font-size: 25px; padding-bottom: 10px; font-weight: bold;">Application UI</h2>
+<h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Application Shells</h2>
+<ul>
+  <button id="stacked-btn" class="menu-button" onclick="loadStackedContent()">Stacked Layouts</button>
+  <button id="sidebar-btn" class="menu-button" onclick="loadSidebarContent()">Sidebar Layouts</button>
+  <button id="multi-btn" class="menu-button" onclick="loadMultiContent()">Multi-Column<br> Layouts</button>
+</ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Headings</h2>
+      <ul>
+        <button id="page-heading-btn" class="menu-button" onclick="loadPageContent()">Page Headings</button>
+        <button id="card-heading-btn" class="menu-button" onclick="loadCardContent()">Card Headings</button>
+        <button id="section-heading-btn" class="menu-button" onclick="loadSectionContent()">Section Headings</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Data Display</h2>
+      <ul>
+        <button id="description-btn" class="menu-button" onclick="loadDescriptionContent()">Description Lists</button>
+        <button id="stats-data-btn" class="menu-button" onclick="loadStatsDataContent()">Stats</button><br>
+        <button id="calendars-btn" class="menu-button" onclick="loadCalendarsContent()">Calendars</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Lists</h2>
+      <ul>
+        <button id="stacked-lists-btn" class="menu-button" onclick="loadStackedListsContent()">Stacked Lists</button>
+        <button id="tables-btn" class="menu-button" onclick="loadTablesContent()">Tables</button><br>
+        <button id="grid-lists-btn" class="menu-button" onclick="loadGridListsContent()">Grid Lists</button><br>
+        <button id="feeds-btn" class="menu-button" onclick="loadFeedsContent()">Feeds</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Forms</h2>
+      <ul>
+        <button id="form-layouts-btn" class="menu-button" onclick="loadFormLayoutsContent()">Form Layouts</button>
+        <button id="input-groups-btn" class="menu-button" onclick="loadInputGroupsContent()">Input Groups</button>
+        <button id="select-menus-btn" class="menu-button" onclick="loadSelectMenusContent()">Select Menus</button>
+        <button id="signin-btn" class="menu-button" onclick="loadSigninContent()">Sign-in and Registration</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Feedback</h2>
+      <ul>
+        <button id="alerts-btn" class="menu-button" onclick="loadAlertsContent()">Alerts</button>
+        <button id="empty-btn" class="menu-button" onclick="loadEmptyContent()">Empty States</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Navigation</h2>
+      <ul>
+        <button id="navbars-btn" class="menu-button" onclick="loadNavbarsContent()">Navbars</button>
+        <button id="pagination-btn" class="menu-button" onclick="loadPaginationContent()">Pagination</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Overlays</h2>
+      <ul>
+        <button id="dialogs-btn" class="menu-button" onclick="loadDialogsContent()">Dialogs</button>
+        <button id="slideovers-btn" class="menu-button" onclick="loadSlideoversContent()">Slideovers</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Elements</h2>
+      <ul>
+        <button id="avatars-btn" class="menu-button" onclick="loadAvatarsContent()">Avatars</button><br>
+        <button id="badges-btn" class="menu-button" onclick="loadBadgesContent()">Badges</button><br>
+        <button id="dropdowns-btn" class="menu-button" onclick="loadDropdownsContent()">Dropdowns</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 25px; padding-bottom: 10px; font-weight: bold;">Ecommerce</h2>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Components</h2>
+      <ul>
+        <button id="product-overviews-btn" class="menu-button" onclick="loadProductOverviewsContent()">Product Overviews</button>
+        <button id="product-lists-btn" class="menu-button" onclick="loadProductListsContent()">Product Lists</button>
+        <button id="category-previews-btn" class="menu-button" onclick="loadCategoryPreviewsContent()">Category Previews</button>
+        <button id="shopping-carts-btn" class="menu-button" onclick="loadShoppingCartsContent()">Shopping Carts</button>
+        <button id="category-filters-btn" class="menu-button" onclick="loadCategoryFiltersContent()">Category Filters</button>
+        <button id="product-quickviews-btn" class="menu-button" onclick="loadProductQuickviewsContent()">Product Quickviews</button>
+        <button id="product-features-btn" class="menu-button" onclick="loadProductFeaturesContent()">Product Features</button>
+        <button id="store-navigation-btn" class="menu-button" onclick="loadStoreNavigationContent()">Store Navigation</button>
+        <button id="promo-sections-btn" class="menu-button" onclick="loadPromoSectionsContent()">Promo Sections</button>
+        <button id="checkout-forms-btn" class="menu-button" onclick="loadCheckoutFormsContent()">Checkout Forms</button>
+        <button id="reviews-btn" class="menu-button" onclick="loadReviewsContent()">Reviews</button>
+        <button id="order-summaries-btn" class="menu-button" onclick="loadOrderSummariesContent()">Order Summaries</button>
+        <button id="order-history-btn" class="menu-button" onclick="loadOrderHistoryContent()">Order History</button>
+        <button id="incentives-btn" class="menu-button" onclick="loadIncentivesContent()">Incentives</button>
+      </ul>
+      <h2 style="color: rgb(0, 0, 0); font-size: 17px; padding-bottom: 10px; font-weight: bold;">Page Examples</h2>
+      <ul>
+        <button id="storefront-btn" class="menu-button" onclick="loadStorefrontContent()">Storefront Pages</button>
+        <button id="product-pages-btn" class="menu-button" onclick="loadProductPagesContent()">Product Pages</button>
+        <button id="category-pages-btn" class="menu-button" onclick="loadCategoryPagesContent()">Category Pages</button>
+        <button id="shopping-cart-pages-btn" class="menu-button" onclick="loadShoppingCartPagesContent()">Shopping Cart Pages</button>
+        <button id="order-detail-pages-btn" class="menu-button" onclick="loadOrderDetailContent()">Order Detail Pages</button>
+        <button id="order-history-pages-btn" class="menu-button" onclick="loadOrderHistoryContent()">Order History Pages</button>
+      </ul>
